@@ -1,6 +1,6 @@
 public class PracticeProblem {
 	public static void main(String args[]) {
-
+		System.out.println(totalWordsChecker("Hello() b c d e f g h i j"));
 	}
 
 	public static int calculate(int arg1, int arg2, char operator) {
@@ -45,7 +45,7 @@ public class PracticeProblem {
 				case '[':
 					wordCount += 1;
 					break;
-				case '(':
+				case ')':
 					wordCount += 1;
 					break;
 				case '-':
@@ -71,6 +71,7 @@ public class PracticeProblem {
 					continue;
 			}
 		}
+		System.out.println(wordCount);
 		return wordCount <= MAXIMUM;
 	}
 
